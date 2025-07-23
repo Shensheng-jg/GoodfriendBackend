@@ -26,7 +26,6 @@ class JwtTokenProvider {
     fun generateToken(userId: String): String {
         val now = Date()
         val expiryDate = Date(now.time + jwtExpiration)
-
         return Jwts.builder()
             .setSubject(userId)
             .setIssuedAt(now)
