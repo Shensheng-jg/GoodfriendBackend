@@ -1,24 +1,30 @@
+### 通用忽略 ###
 HELP.md
-.gradle
+.gradle/
 build/
+
+### Gradle 包装器例外（必须提交）###
 !gradle/wrapper/gradle-wrapper.jar
+
+### 源码目录下的构建目录例外（根据需求保留）###
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### STS ###
+### IDE 配置 ###
+# STS/Eclipse
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -26,15 +32,19 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Kotlin ###
-.kotlin
+# Kotlin
+.kotlin/
+
+### 系统文件 ###
+.DS_Store
+Thumbs.db
